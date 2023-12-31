@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>Aprendendo <strong>DOM</strong></p>
+    <p>testeeee</p>
+    <a href=""></a>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[0]
+        window.document.write(p1.innerText)
+        window.document.write(p1.innerHTML)
+        corpo.style.backgroundColor = "gray"
+        p1.style.color = "blue"
+    </script>
+</body>
+</html>

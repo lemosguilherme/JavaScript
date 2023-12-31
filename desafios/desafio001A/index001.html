@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <p>Qual o seu pais?</p>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Enviar" onclick="enviado()">
+    <div id="resp">Resposta</div>
+    <script>
+        function enviado(){
+        var dado = String(document.getElementById("pais").value).toUpperCase()
+        var resp = document.getElementById("resp")
+        //var d = String(dado.value)
+        if (dado=="BRASIL"){
+            resp.innerText = "Brasileiro"
+        }
+        else{
+            resp.innerText = "Estrangeiro"
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        div.container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        div#resp {
+            border: 1px solid black;
+            width: 100px;
+            text-align: center;
+        }
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <input type="number" name="texto1" id="texto1"> + 
+    <input type="number" name="texto2" id="texto2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div class="container">
+        <div id="resp"><strong>Resposta</strong></div>
+    </div>
+    <script>
+        var texto1 = window.document.getElementById("texto1")
+        var texto2 = window.document.getElementById("texto2")
+        function somar(){
+            var soma = Number(texto1.value) + Number(texto2.value)
+            var resp = document.getElementById("resp")
+            resp.innerHTML = `<strong>${soma}</strong>`
+            
+    }
+    </script>
+</body>
+</html>

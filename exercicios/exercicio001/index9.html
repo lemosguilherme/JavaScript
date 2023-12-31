@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    
+</head>
+<body>
+    <p>Velocidade: </p>
+    <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Calcular" onclick="calcular()">
+    <div id="resultado">Resposta</div>
+    <script>
+        function calcular(){
+            var txtv = window.document.getElementById("txtvel")
+            var res = window.document.getElementById("resultado")
+            var vel = Number(txtv.value)
+            res.innerHTML = `Velocidade de ${vel}`
+            if (vel>60){
+                res.innerHTML = "Multado"
+            }
+            else{
+                res.innerHTML = "Tranquilo"
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>
