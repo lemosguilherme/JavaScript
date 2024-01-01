@@ -48,6 +48,7 @@ function verificar(){
             if (idade<=15){
                 imagem.style.backgroundImage = "url('imagem/f-crianca.jpg')"
                 main.style.height = "530px"
+                imagem.style.backgroundPosition = "center center"
             }
             else if (idade<=30){
                 imagem.style.backgroundImage = "url('imagem/f-jovem.jpg')"
