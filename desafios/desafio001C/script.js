@@ -17,7 +17,7 @@ function verificar(){
     else{
         if (sex[0].checked) {
             genero = "Homem"
-            resposta.innerHTML = `Detectamos ${genero} com ${idade} anos`
+            resposta.innerHTML = `${genero} com ${idade} anos`
             main.style.height = "200px"
            if (idade <=15) {
             imagem.style.backgroundImage = "url('imagem/m-crianca.jpg')"
@@ -43,7 +43,7 @@ function verificar(){
         }
         else if (sex[1].checked){
             genero = "Mulher"
-            resposta.innerHTML = `Detectamos ${genero} com ${idade} anos`
+            resposta.innerHTML = `${genero} com ${idade} anos`
             main.style.height = "200px"
             if (idade<=15){
                 imagem.style.backgroundImage = "url('imagem/f-crianca.jpg')"
