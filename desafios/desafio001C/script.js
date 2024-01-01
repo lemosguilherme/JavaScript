@@ -21,22 +21,22 @@ function verificar(){
             main.style.height = "200px"
            if (idade <=15) {
             imagem.style.backgroundImage = "url('imagem/m-crianca.jpg')"
-            main.style.height = "430px"
+            main.style.height = "530px"
             imagem.style.backgroundPosition = "right center"
            }
            else if (idade<=30){
             imagem.style.backgroundImage = "url('imagem/m-jovem.jpg')"
-            main.style.height = "430px"
+            main.style.height = "530px"
             imagem.style.backgroundPosition = "top center"
            }
            else if (idade<=60){
             imagem.style.backgroundImage = "url('imagem/m-adulto.jpg')"
-            main.style.height = "430px"
+            main.style.height = "530px"
             imagem.style.backgroundPosition = "left center"
            }
            else {
             imagem.style.backgroundImage = "url('imagem/m-idoso.jpg')"
-            main.style.height = "430px"
+            main.style.height = "530px"
             imagem.style.backgroundPosition = "center center"
            }
            
@@ -47,21 +47,21 @@ function verificar(){
             main.style.height = "200px"
             if (idade<=15){
                 imagem.style.backgroundImage = "url('imagem/f-crianca.jpg')"
-                main.style.height = "430px"
+                main.style.height = "530px"
             }
             else if (idade<=30){
                 imagem.style.backgroundImage = "url('imagem/f-jovem.jpg')"
-                main.style.height = "430px"
+                main.style.height = "530px"
                 imagem.style.backgroundPosition = "center center"
             }
             else if (idade<=60){
                 imagem.style.backgroundImage = "url('imagem/f-adulta.jpg')"
-                main.style.height = "430px"
+                main.style.height = "530px"
                 imagem.style.backgroundPosition = "center center"
             }
             else {
                 imagem.style.backgroundImage = "url('imagem/f-idosa.jpg')"
-                main.style.height = "430px"
+                main.style.height = "530px"
                 imagem.style.backgroundPosition = "top center"
             }
         }
