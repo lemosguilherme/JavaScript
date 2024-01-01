@@ -11,6 +11,7 @@ body {
     background-size: cover;
     background-position: bottom center;
     background-color: blanchedalmond;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
