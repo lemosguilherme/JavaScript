@@ -6,19 +6,20 @@ function carregar(){
     var agora = new Date()
     var hora = agora.getHours()
     var resposta = document.querySelector("div.hora > h2")
+    var img = document.querySelector("div.imagem")
     resposta.innerHTML = `Agora são ${hora} horas`
 
     if(hora >= 0 && hora <= 12){
         document.body.style.backgroundColor = "orange"
-        document.getElementById("img1").src = bomdia
+        img.style.backgroundImage = "url('bom-dia.jpg')"
     }
     else if (hora<=18){
         document.body.style.backgroundColor = "rgb(238, 122, 122)"
-        document.getElementById("img1").src = boatarde
+        img.style.backgroundImage = "url('boa-tarde.jpg')"
         g.style.backgroundColor = "#EBEBEB"
     }
     else {
         document.body.style.backgroundColor = "gray"
-        document.getElementById("img1").src = boanoite
+        img.style.backgroundImage = "url('boa-noite.jpg')"
     }
 }

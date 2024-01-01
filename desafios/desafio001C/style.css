@@ -5,6 +5,11 @@
     padding: 0px;
 }
 body {
+    height: 100vh;
+    background-image: url("imagem/bom-dia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
     background-color: blanchedalmond;
     display: flex;
     flex-direction: column;
@@ -13,17 +18,64 @@ body {
     gap: 30px;
 }
 header {
+    margin-top: 20px;
+    padding: 20px;
+    width: 360px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
     text-align: center;
     background-color: white;
 }
 main {
-    width: 500px;
+    width: 400px;
     height: 150px;
     padding-top: 10px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     gap: 30px;
+}
+main input#ano{
+    block-size: 25px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.322);
+}
+
+input.botao {
+    block-size: 30px;
+    inline-size: 100px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.322);
+}
+div#resposta {
+    font-weight: bolder;
+    
+    font-size: 1.1em;
+}
+.imagem {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+footer a {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
+    padding: 0px 20px;
 }

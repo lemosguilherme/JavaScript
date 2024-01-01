@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 1C</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="tela-grande.css">
 </head>
 <body>
     <header>
@@ -12,14 +14,28 @@
     </header>
     <main>
         <div>
-
+            <label for="ano">Ano de nascimento</label>
+            <input type="number" name="ano" id="ano"  >
         </div>
         <div>
+            Sexo
+            <input type="radio" name="sexo" id="masc">
+            <label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="fem">
+            <label for="fem">Feminino</label>
+        </div>
+        <div>
+            <input class="botao" type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div id="resposta">
+            
+        </div>
+        <div class="imagem">
             
         </div>
     </main>
     <footer>
-        <p><a href="">Criado por Guilherme</a></p>
+        <a href="https://github.com/lemosguilherme" target="_blank">Criado por Guilherme</a>
     </footer>
     <script src="script.js"></script>
 </body>
