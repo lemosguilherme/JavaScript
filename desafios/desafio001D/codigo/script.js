@@ -1,23 +1,33 @@
 function apertou(){
-    var inicio = Number(document.querySelector("#inicio").value)
-    var fim = Number(document.querySelector("#fim").value)
-    var passo= Number(document.querySelector("#passo").value)
+    var inicio = document.querySelector("#inicio")
+    var fim = document.querySelector("#fim")
+    var passo= document.querySelector("#passo")
     var resposta = document.querySelector(".resposta")
-    if (inicio == "" || fim == "" || passo == ""){
+    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
         alert("Erro. Digite um valor")
     }
-    //contagem crescente
-    else if (inicio <=fim){
-        resposta.innerHTML = ""
-        for(var c = inicio; c <= fim; c = c + passo){
-            resposta.innerHTML = `${resposta.innerHTML} &#x1F449 ${c} `
+
+    else {
+        var i = Number(inicio.value)
+        var f = Number(fim.value)
+        var p = Number(passo.value)
+        //contagem crescente
+        if (p <= 0){
+            alert("Campo 'PASSO' deve ser maior que '0' ")
         }
+        else if (i <=f){
+            resposta.innerHTML = ""
+            for(var c = i; c <= f; c = c + p){
+                resposta.innerHTML = `${resposta.innerHTML} &#x1F449 ${c} `
+            }
+        }
+        //contagem regressiva
+        else if (i >=f){
+            resposta.innerHTML = ""
+            for(var c = i; c >= f; c = c- p){
+                resposta.innerHTML = `${resposta.innerHTML} &#x1F449 ${c} `
+            }
+        }   
     }
-    //contagem regressiva
-    else if (inicio >=fim){
-        resposta.innerHTML = ""
-        for(var c = inicio; c >= fim; c = c- passo){
-            resposta.innerHTML = `${resposta.innerHTML} &#x1F449 ${c} `
-        }
-    }   
+    
 }
