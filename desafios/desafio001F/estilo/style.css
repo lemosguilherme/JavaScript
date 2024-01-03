@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: bisque;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+header {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+    width: 300px;
+}
+main {
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+main p {
+    padding-bottom: 10px;
+}
+main input {
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    block-size: 28px;
+    text-align: center;
+}
+main input.botao {
+    inline-size: 100px;
+    block-size: 30px;
+    font-weight: bold;
+}
+#resultado {
+    width: 200px;
+    height: 200px;
+    
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
