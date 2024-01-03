@@ -39,3 +39,9 @@ main input.botao {
     block-size: 30px;
     font-weight: bold;
 }
+footer a {
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    font-weight: bolder;
+}
