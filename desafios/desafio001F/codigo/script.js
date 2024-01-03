@@ -6,7 +6,7 @@ function Badicionar(){
     valor(Number(document.querySelector("#valor").value))
     function valor(n1){
         if (n1 < 1 || n1 > 100){
-            alert("Valor invalido")
+            alert("Valor inválido")
         }
         else if (lista.indexOf(n1) != -1){
             alert("Valor já digitado")
