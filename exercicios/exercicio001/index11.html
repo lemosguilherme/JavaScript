@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcular(cal){
+            if (cal == 1){
+                return cal
+            }
+            else{
+                cal * calcular(cal - 1)
+            }
+        }
+        function fatorial(num){
+            var n = prompt("Digite um número")
+            num(n)
+        }
+        fatorial(calcular)
+
+    </script>
+</body>
+</html>
