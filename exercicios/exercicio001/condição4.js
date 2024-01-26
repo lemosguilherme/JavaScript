@@ -1,5 +1,5 @@
-var agora = new Date()
-var hora = agora.getHours()
+var agora = new Date();
+var hora = agora.getHours();
 console.log(hora)
 if (hora < 12){
     console.log("Bom dia")
@@ -9,4 +9,4 @@ else if (hora <=18){
 }
 else{
     console.log("Boa noite")
-}
+};
